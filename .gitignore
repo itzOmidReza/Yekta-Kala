@@ -1,0 +1,56 @@
+# Nuxt dev/build outputs
+.output/
+.data/
+.nuxt/
+.nitro/
+.cache/
+dist/
+
+# Node dependencies & lock files
+node_modules/
+package-lock.json       # اگر npm استفاده می‌کنی
+yarn.lock               # اگر Yarn استفاده می‌کنی
+pnpm-lock.yaml          # اگر pnpm استفاده می‌کنی
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Misc
+.DS_Store
+Thumbs.db
+.fleet
+.idea/                  # WebStorm/PHPStorm/IntelliJ
+.vscode/                # VSCode settings
+*.sublime-project       # Sublime Text
+*.sublime-workspace
+
+# Local env files
+.env
+.env.*                  # هر فایلی که با .env. شروع می‌شود
+!.env.example           # مثال کانفیگ را نگه دار
+
+# Coverage reports
+coverage/
+nyc_output/
+
+# Testing artifacts
+jest-results.json
+cypress/screenshots/
+cypress/videos/
+
+# Docker
+docker-compose.override.yml
+.env.docker
+
+# Build assets, caches
+.cache-loader/
+*.local
+*.tmp
+
+# OS-specific
+ehthumbs.db
+Icon?

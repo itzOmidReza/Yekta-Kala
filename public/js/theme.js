@@ -384,17 +384,6 @@
   };
   /* end Zoom ======*/
 
-  /*====== ReadMore ======*/
-  SCRIPT.ReadMore = function () {
-    $(".expandable-text-expand-btn").on("click", function () {
-      let contentFixedHeight = $(this).parents(".expandable-text");
-      contentFixedHeight.toggleClass("active");
-      $(this).find(".show-more").toggleClass("d-none");
-      $(this).find(".show-less").toggleClass("d-none");
-    });
-  };
-  /* end ReadMore ======*/
-
   /*====== ShopView ======*/
   SCRIPT.ShopView = function () {
     $(".btn-list-view").on("click", function () {
@@ -839,7 +828,6 @@
       SCRIPT.Countdown(),
       SCRIPT.Slider(),
       SCRIPT.SimpleBar(),
-      SCRIPT.ReadMore(),
       SCRIPT.ShopView(),
       SCRIPT.Zoom(),
       SCRIPT.Form(),

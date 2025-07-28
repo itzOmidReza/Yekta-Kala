@@ -33,7 +33,6 @@ useHead({
     { src: "js/dependencies/jquery.countdown.min.js" },
     { src: "js/dependencies/jquery.simple.timer.min.js" },
     { src: "js/dependencies/nouislider.min.js" },
-    { src: "js/dependencies/remodal.min.js" },
     { src: "js/dependencies/select2.min.js" },
     { src: "js/dependencies/simplebar.min.js" },
     { src: "js/dependencies/swiper-bundle.min.js" },

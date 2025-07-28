@@ -13,7 +13,6 @@
 </template>
 
 <script setup lang="ts">
-import { boolean } from "yup";
 
 defineProps({
   size: {

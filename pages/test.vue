@@ -1,20 +1,16 @@
 <script setup lang="ts">
-import * as Yup from "yup";
-import { Form } from "vee-validate";
+import { FetchApi } from '~/utilities/CustomFetchApi';
+import { onMounted } from 'vue'
 
-const email = ref('')
-const formSchema = Yup.object().shape({
-  email:Yup.string().required().email(),
+onMounted(async()=>{
+  var res = await FetchApi('/banner');
+  console.log(res)
 })
 </script>
 
 <template>
   <div>
 
-  {{ email }}
-    <Form :validation-schema="formSchema">
-      <BaseInput name="email" v-model="email" label="ایمیل" placeholder="ایمیل خود را واردکنید" />
-    </Form>
   </div>
 </template>
 
